@@ -67,6 +67,10 @@ h1 {
   color: darkblue;
 }
 
+.blocco form {
+  text-align: center;
+}
+
 .blocco input {
   font-size: 20px;
   text-align: center;
@@ -172,6 +176,7 @@ h1 {
   font-size: 20px;
   font-weight: bold;
   color: white;
+  padding-left: 10px;
 }
 
 /* CONTAINER BOX */
@@ -206,7 +211,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: grey;
+  background-color: #c3aa8f;
 }
 
 .box1 p {
