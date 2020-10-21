@@ -25,7 +25,7 @@ h1 {
   color: white;
 }
 .container {
-  height: 25%;
+  height: 20%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -44,11 +44,27 @@ h1 {
   align-items: center;
   align-self: flex-start;
   background-color: #FDF8E2;
-  border-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+
 }
 
+.nome_cognome {
+  height: 50%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+}
+
+.nome_cognome h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+
 .container2 {
-  height: 25%;
+  height: 10%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -59,6 +75,44 @@ h1 {
 }
 
 .subcontainer2 {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #FDF8E2;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.nome_cognome2sx {
+  height: 50%;
+  width: 25%;
+  background-color: orange;
+  margin-right: 5px;
+}
+
+.nome_cognome2dx {
+  height: 50%;
+  width: 25%;
+  background-color: orange;
+  margin-left: 5px;
+}
+
+
+
+.container3 {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: #365577;
+}
+
+.subcontainer3 {
   height: 100%;
   width: 60%;
   display: flex;
