@@ -16,7 +16,7 @@ body {
 nav {
   height: 10%;
   width: 100%;
-  background-color: #1d1b49;
+  /* background-color: #1d1b49; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,12 +58,13 @@ h1 {
   width: 25%;
   display: flex;
   flex-direction: column;
-  background-color: orange;
+  /* background-color: orange; */
 }
 
 .blocco h1 {
   font-size: 20px;
   text-align: center;
+  color: darkblue;
 }
 
 .blocco input {
@@ -115,7 +116,7 @@ h1 {
 .blocco2sx {
   height: 50%;
   width: 12%;
-  background-color: orange;
+  /* background-color: orange; */
   margin-right: 5px;
   border-radius: 10px;
   display: flex;
@@ -131,7 +132,7 @@ h1 {
 .blocco2dx {
   height: 50%;
   width: 12%;
-  background-color: orange;
+  /* background-color: orange; */
   margin-left: 5px;
   border-radius: 10px;
   display: flex;
@@ -160,15 +161,17 @@ h1 {
   width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: flex;
+  justify-content: center;
   align-items: flex-start;
   align-self: flex-start;
-  background-color: #FDF8E2;
-  border: 3px solid black;
+  background-color: #1d1b49;
+  /* border: 3px solid black; */
 }
 
 .passeggeri {
   font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
 /* CONTAINER BOX */
@@ -191,14 +194,14 @@ h1 {
   align-items: flex-start;
   align-self: flex-start;
   background-color: #FDF8E2;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 /* BOX */
 .box1 {
   height: 100%;
   width: 25%;
-  border: 3px solid brown;
+  /* border: 3px solid brown; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,7 +218,7 @@ h1 {
 .box2 {
   height: 100%;
   width: 25%;
-  border: 3px solid brown;
+  /* border: 3px solid brown; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -230,7 +233,7 @@ h1 {
 .box3 {
   height: 100%;
   width: 25%;
-  border: 3px solid brown;
+  /* border: 3px solid brown; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -245,7 +248,7 @@ h1 {
 .box4 {
   height: 100%;
   width: 25%;
-  border: 3px solid brown;
+  /* border: 3px solid brown; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -260,7 +263,7 @@ h1 {
 .box5 {
   height: 100%;
   width: 25%;
-  border: 3px solid brown;
+  /* border: 3px solid brown; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
