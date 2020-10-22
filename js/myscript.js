@@ -32,10 +32,14 @@ var costoBiglietto = document.getElementById("costo_biglietto");
 var scontomin = document.getElementById("sconto");
 
 // numero carrozza
-var numcarrozza = document.getElementById('carrozza')
+var numcarrozza = document.getElementById("carrozza");
 
-// codice BIGLIETTO
-var codic = document.getElementById('codice')
+// codice biglietto
+var codic = document.getElementById("codice");
+
+// container biglietto
+var containerBiglietto = document.getElementById("container_biglietto");
+
 
 // FUNZIONE NOME
 bottoneGenera.addEventListener("click",
@@ -52,8 +56,8 @@ function() {
     costoBiglietto.innerHTML = scontoOver65.toFixed(2).value + "€";
     scontomin.innerHTML ="Sconto Over65";
   } else {
-    costoBiglietto.innerHTML = "Nessuno sconto"
-
+    costoBiglietto.innerHTML = price.value * km.value;
+    scontomin.innerHTML = "Nessuno Sconto"
   }
 
   // FUNZIONE CARROZZA
@@ -62,6 +66,9 @@ function() {
   // FUNZIONE CODICE
   codic.innerHTML = Math.floor(Math.random() * (100000 - 90000)) + 90000;
 
-  
+  // CONTAINER BIGLIETTO VISIBILE AL CLICK
+
+
+
 
 } );
