@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title></title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,17 +18,17 @@
           <h1>Nome Cognome</h1>
           <p>
             <br>
-            <form class="form" id="form" action="index.html" method="post">
-            <input type="text" name="fname" placeholder="Nome cognome" id="fname">
-            </form><br>
+            <form class="form" action="index.html" method="post">
+            <input id="fname" type="text" name="fname" placeholder="Nome cognome">
+            </form>
           </p>
         </div>
         <div class="blocco">
           <h1>Km da percorrere</h1>
           <p>
             <br>
-            <form class="form" id="form" action="index.html" method="post">
-            <input type="text" name="fname" placeholder="Km" id="fkm">
+            <form class="form" action="index.html" method="post">
+            <input id="fkm" type="text" name="fname" placeholder="Km">
             </form>
           </p>
         </div>
@@ -35,8 +36,8 @@
           <h1>Età</h1>
           <p>
             <br>
-            <form class="form" id="form" action="index.html" method="post">
-            <input type="text" name="fname" placeholder="Età" id="feta">
+            <form class="form" action="index.html" method="post">
+            <input id="feta" type="text" name="fname" placeholder="Età">
             </form>
           </p>
         </div>
@@ -46,10 +47,10 @@
       <div class="container2">
         <div class="subcontainer2">
           <div class="blocco2sx">
-            <button type="button" name="button"><h2>Genera</h2></button>
+            <button id="genera" type="button" name="button"><h2>Genera</h2></button>
           </div>
           <div class="blocco2dx">
-            <button type="button" name="button"><h2>Annulla</h2></button>
+            <button id="annulla" type="button" name="button"><h2>Annulla</h2></button>
           </div>
         </div>
         </div>
@@ -57,44 +58,46 @@
 
 
       <!-- IL TUO BIGLIETTO -->
-      <nav>
-        <h1>IL TUO BIGLIETTO</h1>
-      </nav>
-      <div class="container3">
-        <div class="subcontainer3">
-          <div class="passeggeri">
-            DETTAGLIO PASSEGGERI
-          </div>
+      <div class="container_biglietto">
 
+        <nav>
+          <h1>IL TUO BIGLIETTO</h1>
+        </nav>
+        <div class="container3">
+          <div class="subcontainer3">
+            <div class="passeggeri">
+              DETTAGLIO PASSEGGERI
+            </div>
+
+          </div>
+        </div>
+
+        <div class="container4">
+          <div class="subcontainer4">
+            <div class="box1">
+              <p>NOME PASSEGGERO</p>
+              <p id="nome_passeggero">Nome Passeggero</p>
+            </div>
+            <div class="box2">
+              <p>Offerta</p>
+              <p id="sconto">Sconto Minorenne</p>
+            </div>
+            <div class="box3">
+              <p>Carrozza</p>
+              <p id="carrozza">7</p>
+            </div>
+            <div class="box4">
+              <p>Codice CP</p>
+              <p id="codice">97928</p>
+            </div>
+            <div class="box5">
+              <p>Costo biglietto</p>
+              <p id="costo_biglietto">3.36</p>
+            </div>
+
+          </div>
         </div>
       </div>
-
-      <div class="container4">
-        <div class="subcontainer4">
-          <div class="box1">
-            <p>NOME PASSEGGERO</p>
-            <p id="nome_passeggero">Pippo</p>
-          </div>
-          <div class="box2">
-            <p>Offerta</p>
-            <p id="sconto">Sconto Minorenne</p>
-          </div>
-          <div class="box3">
-            <p>Carrozza</p>
-            <p id="carrozza">7</p>
-          </div>
-          <div class="box4">
-            <p>Codice CP</p>
-            <p id="codice">97928</p>
-          </div>
-          <div class="box5">
-            <p>Costo biglietto</p>
-            <p id="costo_biglietto">3.36</p>
-          </div>
-
-        </div>
-      </div>
-
 
 
 

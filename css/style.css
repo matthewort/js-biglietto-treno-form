@@ -150,7 +150,7 @@ h1 {
 
 /* CONTAINER DETTAGLIO PASSEGGERI */
 .container3 {
-  height: 5%;
+  height: 10%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -181,7 +181,7 @@ h1 {
 
 /* CONTAINER BOX */
 .container4 {
-  height: 25%;
+  height: 40%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -278,4 +278,8 @@ h1 {
 .box5 p {
   font-size: 20px;
   font-weight: bold;
+}
+
+.container_biglietto {
+  height: 60%;
 }

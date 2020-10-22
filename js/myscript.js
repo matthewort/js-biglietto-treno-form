@@ -1,24 +1,23 @@
-// nome e cognome
-var nomeCognome = document.getElementById("fname");
-console.log("nome e cognome: ", nomeCognome);
+// nome e cognome passeggero
+var nomePasseggero = document.getElementById("nome_passeggero");
+
+// form nome e cognome
+var nomeCognomeInput = document.getElementById("fname");
+
+// bottone genera
+var bottoneGenera = document.getElementById("genera");
+
+// bottone annulla
+var bottoneAnnulla = document.getElementById("annulla");
 
 // km da percorrere
 var km = document.getElementById("fkm");
-console.log("km da percorrere: ", km);
 
 // età
 var eta = document.getElementById("feta");
-console.log("età: ", feta);
-
-// nome passeggero
-var nomePasseggero = document.getElementById("nome_passeggero");
-var nomePasseggero = nomeCognome;
-console.log("nome passeggero: ", nomePasseggero);
-
 
 // prezzo biglietto
 var price = 0.21;
-console.log("prezzo: ", 0.21 * km);
 
 // sconto minorenne
 var scontoMinorenne = 80 * (km * 0.21) / 100;
@@ -26,34 +25,43 @@ var scontoMinorenne = 80 * (km * 0.21) / 100;
 // sconto over65
 var scontoOver65 = 60 * (km * 0.21) / 100;
 
-// condizioni età
-if (eta <= 17) {
-  // sconto 20%
-  elementoOutput.innerHTML = "Sconto Minorenne";
-  console.log("minorenne!", scontoMinorenne);
-} else if (eta >= 66) {
-  // sconto 40%
-  elementoOutput.innerHTML = "Sconto Over65";
-  console.log("over 65!", scontoOver65);
-} else {
-  elementoOutput.innerHTML = "Nessuno sconto";
-  console.log("nessuno sconto");
-}
+// risultato sconto
+var costoBiglietto = document.getElementById("costo_biglietto");
 
-var elementoOutput = document.getElementById("sconto");
+// sconto minorenne o over65
+var scontomin = document.getElementById("sconto");
 
-// costo biglietto
-if (eta <= 17) {
-  // sconto 20%
-  elementoOutput.innerHTML = scontoMinorenne.toFixed(2) + "€";
-  console.log("prezzo :", scontoMinorenne.toFixed(2) + "€");
-} else if (eta >= 66) {
-  // sconto 40%
-  elementoOutput.innerHTML = scontoOver65.toFixed(2) + "€";
-  console.log("prezzo :", scontoOver65.toFixed(2) + "€");
-} else {
-  elementoOutput.innerHTML = "Nessuno sconto";
-  console.log("nessuno sconto");
-}
+// numero carrozza
+var numcarrozza = document.getElementById('carrozza')
 
-var elementoOutput = document.getElementById("costo_biglietto");
+// codice BIGLIETTO
+var codic = document.getElementById('codice')
+
+// FUNZIONE NOME
+bottoneGenera.addEventListener("click",
+function() {
+  nomePasseggero.innerHTML = nomeCognomeInput.value;
+
+  // CONDIZIONE KM
+  if (eta.value <= 17) {
+    // sconto 20%
+    costoBiglietto.innerHTML = scontoMinorenne.toFixed(2).value + "€";
+    scontomin.innerHTML ="Sconto Minorenne";
+  } else if (eta.value >= 66) {
+    // sconto 40%
+    costoBiglietto.innerHTML = scontoOver65.toFixed(2).value + "€";
+    scontomin.innerHTML ="Sconto Over65";
+  } else {
+    costoBiglietto.innerHTML = "Nessuno sconto"
+
+  }
+
+  // FUNZIONE CARROZZA
+  numcarrozza.innerHTML = Math.floor(Math.random() *10);
+
+  // FUNZIONE CODICE
+  codic.innerHTML = Math.floor(Math.random() * (100000 - 90000)) + 90000;
+
+  
+
+} );
